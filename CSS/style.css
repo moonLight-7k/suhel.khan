@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+
 *,
 :after,
 :before {
@@ -15,6 +17,7 @@ a:hover {
 }
 
 body {
+    font-family: 'VCR OSD Mono', sans-serif;
     cursor: url("../assets/image/cursor1.png"), auto;
     background-image: url('../assets/image/bg.webp');
     background-repeat: no-repeat;
