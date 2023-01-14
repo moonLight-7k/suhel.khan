@@ -1,8 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+
+
 *,
 :after,
 :before {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: 'VCR OSD Mono', sans-serif;
+
 }
+
 
 blockquote,
 body,
