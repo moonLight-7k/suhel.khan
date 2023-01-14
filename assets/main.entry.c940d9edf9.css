@@ -392,7 +392,7 @@ a:focus:after {
 
 .bio__photo:focus:after,
 .bio__photo:hover:after {
-    background-image: url(./image/me.jpg);
+    background-image: url(../assets/image/me.jpg);
     border-radius: 1.5rem;
     opacity: 0.9;
     transition: visibility 0s .2s;
