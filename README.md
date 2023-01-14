@@ -4,6 +4,7 @@ This is the repository for my personal website. The website is built using HTML,
 
 ## Features
 - About me page with information about my background and skills.
+- My CV
 
 
 
