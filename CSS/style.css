@@ -9,10 +9,11 @@
 }
 
 a:hover {
-    cursor: url("../assets/image/cursor1.png"), auto;
-    background-image: url('../assets/image/effect-static.webp');
+    cursor: url("../assets/image/linkCursor.svg"), auto;
+    background-image: url('https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-repeat: no-repeat;
-    /* opacity: 0.5; */
+    background-attachment: fixed;
+    background-size: cover;
 
 
 }
