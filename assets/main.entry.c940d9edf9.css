@@ -1,6 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
 
+body{
+    font-family: 'VCR OSD Mono', sans-serif;
 
+}
 *,
 :after,
 :before {
