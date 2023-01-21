@@ -10,7 +10,7 @@
 
 a:hover {
     cursor: url("../assets/image/linkCursor.svg"), auto;
-    background-image: url('https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('../assets/image/link.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
