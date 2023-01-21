@@ -9,7 +9,7 @@
 }
 
 a:hover {
-    cursor: url("../assets/image/cursor2.png"), auto;
+    cursor: url("../assets/image/cursor1.png"), auto;
     background-image: url('../assets/image/effect-static.webp');
     background-repeat: no-repeat;
     /* opacity: 0.5; */
