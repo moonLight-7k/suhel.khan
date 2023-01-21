@@ -47,39 +47,39 @@ h4,
 h5,
 h6 {
     font-size: 100%;
-    font-weight: 400
+    font-weight: 400;
 }
 
 ul {
-    list-style: none
+    list-style: none;
 }
 
 button,
 input,
 select,
 textarea {
-    margin: 0
+    margin: 0;
 }
 
 img,
 video {
     height: auto;
-    max-width: 100%
+    max-width: 100%;
 }
 
 body {
     scroll-behavior: smooth;
-    text-rendering: optimizeSpeed
+    text-rendering: optimizeSpeed;
 }
 
 a:not([class]) {
     -webkit-text-decoration-skip: ink;
-    text-decoration-skip-ink: auto
+    text-decoration-skip-ink: auto;
 }
 
 img {
     max-width: 100%;
-    display: block
+    display: block;
 }
 
 @font-face {
@@ -87,112 +87,112 @@ img {
     src: url(../assets/fonts/VCROSDMono.woff2) format("woff2"), url(../assets/fonts/) format("woff");
     font-weight: 400;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @keyframes vline {
     0% {
-        transform: translateY(-100%)
+        transform: translateY(-100%);
     }
 
     80%,
     to {
-        transform: translateY(100vh)
+        transform: translateY(100vh);
     }
 }
 
 @keyframes turn-on-transform {
     0% {
-        transform: scaleY(.6) translate(0) skew(2deg)
+        transform: scaleY(.6) translate(0) skew(2deg);
     }
 
     6% {
-        transform: scale(2) translateY(-20%) skew(2deg)
+        transform: scale(2) translateY(-20%) skew(2deg);
     }
 
     30% {
-        transform: scale(1) translateY(-20%) skew(-2deg)
+        transform: scale(1) translateY(-20%) skew(-2deg);
     }
 
     50% {
-        transform: scaleY(.8) translateY(40%) skew(-2deg)
+        transform: scaleY(.8) translateY(40%) skew(-2deg);
     }
 
     to {
-        transform: scale(1) translate(0) skew(0)
+        transform: scale(1) translate(0) skew(0);
     }
 }
 
 @keyframes turn-on-filter {
     0% {
-        filter: brightness(1) invert(1) saturate(1.2)
+        filter: brightness(1) invert(1) saturate(1.2);
     }
 
     3% {
-        filter: brightness(4) invert(1) saturate(2)
+        filter: brightness(4) invert(1) saturate(2);
     }
 
     15% {
-        filter: brightness(4) invert(0) saturate(2)
+        filter: brightness(4) invert(0) saturate(2);
     }
 
     30%,
     50% {
-        filter: brightness(10) invert(0) saturate(1)
+        filter: brightness(10) invert(0) saturate(1);
     }
 
     70% {
-        filter: contrast(1) brightness(1) invert(0) saturate(1)
+        filter: contrast(1) brightness(1) invert(0) saturate(1);
     }
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0)
+        transform: translateY(0);
     }
 
     50% {
-        transform: translateY(-20px)
+        transform: translateY(-20px);
     }
 
     to {
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
 @keyframes go-to-space {
     0% {
-        transform: var(--startTransform)
+        transform: var(--startTransform);
     }
 
     to {
-        transform: var(--endTransform)
+        transform: var(--endTransform);
     }
 }
 
 @keyframes exit-space {
     0% {
-        transform: var(--endTransform)
+        transform: var(--endTransform);
     }
 
     to {
-        transform: var(--startTransform)
+        transform: var(--startTransform);
     }
 }
 
 @keyframes moving-stars {
     0% {
-        transform: translate(0)
+        transform: translate(0);
     }
 
     to {
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
     }
 }
 
 @keyframes blink {
     50% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -203,19 +203,19 @@ img {
     margin-bottom: 2.07rem;
     text-transform: uppercase;
     -webkit-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 .header__container {
     position: -webkit-sticky;
     position: sticky;
-    top: 100px
+    top: 100px;
 }
 
 @media (min-width:500px) {
     .header__container {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     .header__info {
@@ -226,36 +226,36 @@ img {
 .nav__breadcrumb {
     display: flex;
     align-items: center;
-    min-height: 28px
+    min-height: 28px;
 }
 
 .nav__breadcrumb li:not(:last-child):after {
     content: " /";
-    margin-right: 1ch
+    margin-right: 1ch;
 }
 
 .nav__breadcrumb li:last-child {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .nav__breadcrumb li:last-child:after {
     margin-left: .5ch;
     content: "►";
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 .nav__breadcrumb li:last-child:focus-within:after {
-    visibility: hidden
+    visibility: hidden;
 }
 
 @media (max-width:480px) {
     .nav {
-        margin-bottom: 2rem
+        margin-bottom: 2rem;
     }
 
     .nav__menu li {
-        margin-top: .6rem
+        margin-top: .6rem;
     }
 }
 
@@ -263,11 +263,11 @@ img {
     position: relative;
     caret-color: transparent;
     -webkit-user-select: text;
-    user-select: text
+    user-select: text;
 }
 
 .text-nav:focus {
-    outline: none
+    outline: none;
 }
 
 .text-nav:focus:before {
@@ -276,7 +276,7 @@ img {
     bottom: 0;
     left: -9999ch;
     left: calc(var(--caret-position, -9999)*1ch);
-    animation: blink .8s step-end infinite
+    animation: blink .8s step-end infinite;
 }
 
 .footer {
@@ -286,13 +286,13 @@ img {
     align-self: flex-end;
     margin-top: 160px;
     padding-bottom: 2.94117647059rem;
-    padding-bottom: var(--gui-bottom)
+    padding-bottom: var(--gui-bottom);
 }
 
 .big-text {
     font-size: clamp(24px, 4.6vw, 63px);
     font-size: var(--font-size-secondary);
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .button-text {
@@ -311,7 +311,7 @@ img {
     color: var(--text-secondary);
     line-height: .9;
     -webkit-appearance: none;
-    appearance: none
+    appearance: none;
 }
 
 .button-text,
@@ -323,29 +323,29 @@ a {
     transition: background-size .2s cubic-bezier(.29, .8, .21, .63);
     background-position: 50%;
     background-size: 90% 0;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 html:not(.webp) .button-text,
 html:not(.webp) a {
-    background-image: url(/image/rainbow.webp)
+    background-image: url(/image/rainbow.webp);
 }
 
 html.webp .button-text,
 html.webp a {
-    background-image: url(./image/rainbow.webp)
+    background-image: url(./image/rainbow.webp);
 }
 
 .button-text:hover,
 a:hover {
     cursor: url(../assets/image/cursor2.png) 14 8, auto;
-    background-size: 100% 100%
+    background-size: 100% 100%;
 }
 
 .button-text:hover:after,
 a:hover:after {
     visibility: visible;
-    transition: visibility 0s .7s
+    transition: visibility 0s .7s;
 }
 
 .button-text[href^=http]:after,
@@ -365,24 +365,24 @@ a[href^=mailto]:after {
     margin-bottom: .5rem;
     font-size: .6rem;
     visibility: hidden;
-    transition: none
+    transition: none;
 }
 
 .button-text:focus,
 a:focus {
     outline: none;
-    background-size: 100% 100%
+    background-size: 100% 100%;
 }
 
 .button-text:focus:after,
 a:focus:after {
-    visibility: visible
+    visibility: visible;
 }
 
 .bio__photo {
     position: relative;
     color: #fff;
-    color: var(--text-secondary)
+    color: var(--text-secondary);
 }
 
 .bio__photo:after {
@@ -396,7 +396,7 @@ a:focus:after {
     width: 14rem;
     padding-bottom: 14rem;
     visibility: hidden;
-    background-size: cover
+    background-size: cover;
 }
 
 .bio__photo:focus:after,
@@ -409,16 +409,16 @@ a:focus:after {
 }
 
 .playlist-list {
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
 }
 
 .playlist-list li {
-    margin-bottom: 1.4rem
+    margin-bottom: 1.4rem;
 }
 
 .playlist-img {
     opacity: .3;
-    visibility: hidden
+    visibility: hidden;
 }
 
 .playlist-img,
@@ -430,42 +430,42 @@ a:focus:after {
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0
+    right: 0;
 }
 
 .playlist-img:before {
     content: "";
     background-image: url(./image/rainbow.webp);
-    transition: opacity .4s
+    transition: opacity .4s;
 }
 
 html.webp .playlist-img:before {
-    background-image: url(./image/rainbow.webp)
+    background-image: url(./image/rainbow.webp);
 }
 
 .playlist-link:focus+.playlist-img,
 .playlist-link:hover+.playlist-img {
     visibility: visible;
-    background-image: var(--image)
+    background-image: var(--image);
 }
 
 .playlist-link:focus+.playlist-img:before,
 .playlist-link:hover+.playlist-img:before {
-    opacity: .2
+    opacity: .2;
 }
 
 .project-list {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3.4rem;
-    gap: 3.4rem
+    gap: 3.4rem;
 }
 
 .project-list a {
     font-size: clamp(24px, 4.6vw, 63px);
     font-size: var(--font-size-secondary);
     line-height: 1;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .project-list small {
@@ -473,12 +473,12 @@ html.webp .playlist-img:before {
     color: #a0a0a0;
     color: var(--text-primary);
     font-size: clamp(16px, 1.8vw, 34px);
-    font-size: var(--font-size-primary)
+    font-size: var(--font-size-primary);
 }
 
 @media (min-width:580px) {
     .project-list {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -486,11 +486,11 @@ html.webp .playlist-img:before {
     position: relative;
     background-color: #000;
     overflow: hidden;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .tv-screen {
-    animation: turn-on-transform .4s, turn-on-filter 1s
+    animation: turn-on-transform .4s, turn-on-filter 1s;
 }
 
 .tv-effect {
@@ -500,45 +500,45 @@ html.webp .playlist-img:before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .tv-effect.--static {
     background-size: cover;
     opacity: .1;
-    background-image: url(/assets/images/effect-static.gif)
+    background-image: url(/assets/images/effect-static.gif);
 }
 
 body:not([channel]) .tv-effect.--static,
 body[channel="0"] .tv-effect.--static {
-    opacity: .2
+    opacity: .2;
 }
 
 html.webp .tv-effect.--static {
-    background-image: url(/assets/images/effect-static.webp)
+    background-image: url(/assets/images/effect-static.webp);
 }
 
 .tv-effect.--artifacts {
     background-image: url(/assets/images/effect-artifacts.gif);
     background-size: cover;
-    opacity: .4
+    opacity: .4;
 }
 
 html.webp .tv-effect.--artifacts {
-    background-image: url(/assets/images/effect-artifacts.webp)
+    background-image: url(/assets/images/effect-artifacts.webp);
 }
 
 .tv-effect.--vignette {
-    background: radial-gradient(circle, transparent 60%, #000 100%), transparent
+    background: radial-gradient(circle, transparent 60%, #000 100%), transparent;
 }
 
 .tv-effect.--decontrast {
     background-color: #fff;
-    opacity: .2
+    opacity: .2;
 }
 
 body:not([camera]) .tv-effect.--decontrast {
-    display: none
+    display: none;
 }
 
 .tv-effect.--crt:after,
@@ -551,18 +551,18 @@ body:not([camera]) .tv-effect.--decontrast {
     top: 0;
     left: 0;
     width: 100%;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .tv-effect.--crt:before {
     height: 90px;
     background: linear-gradient(180deg, transparent, hsla(0, 100%, 99%, .14902) 50%, transparent);
-    animation: vline 8s linear infinite
+    animation: vline 8s linear infinite;
 }
 
 .tv-effect.--crt:after {
     height: 100%;
-    background-image: repeating-linear-gradient(transparent, transparent 6px, hsla(0, 0%, 100%, .03) 0, hsla(0, 0%, 100%, .03) 12px)
+    background-image: repeating-linear-gradient(transparent, transparent 6px, hsla(0, 0%, 100%, .03) 0, hsla(0, 0%, 100%, .03) 12px);
 }
 
 .tv-content {
@@ -572,13 +572,13 @@ body:not([camera]) .tv-effect.--decontrast {
     overflow-x: hidden;
     overflow-y: auto;
     overflow: hidden auto;
-    background-color: rgba(0, 0, 0, .4)
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .space {
     position: relative;
     background-color: #000;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .stars {
@@ -587,38 +587,38 @@ body:not([camera]) .tv-effect.--decontrast {
     left: 0;
     transform-origin: 0 0;
     width: 4000px;
-    height: 2750px
+    height: 2750px;
 }
 
 @media (min-width:3840px) {
     .stars {
         width: 8000px;
-        height: 5500px
+        height: 5500px;
     }
 }
 
 body[space] .stars {
     animation: moving-stars 117s linear infinite;
-    background-image: url(/assets/images/stars.jpg)
+    background-image: url(/assets/images/stars.jpg);
 }
 
 html.webp body[space] .stars {
-    background-image: url(/assets/images/stars.webp)
+    background-image: url(/assets/images/stars.webp);
 }
 
 html.avif body[space] .stars {
-    background-image: url(/assets/images/stars.avif)
+    background-image: url(/assets/images/stars.avif);
 }
 
 body[space=floating] .spaceship {
-    animation: float 6s ease-in-out infinite
+    animation: float 6s ease-in-out infinite;
 }
 
 .tv {
     --spaceIntro: 0.8s;
     --spaceOutroDelay: 0.2s;
     transform-origin: center 10%;
-    transition: box-shadow .6s ease-out
+    transition: box-shadow .6s ease-out;
 }
 
 body[space] .tv {
@@ -627,83 +627,83 @@ body[space] .tv {
     --endTransform: scale(var(--scale)) translateY(80px);
     animation-duration: var(--spaceIntro);
     animation-timing-function: cubic-bezier(.72, .27, 0, 1);
-    animation-fill-mode: both
+    animation-fill-mode: both;
 }
 
 @media (max-width:900px) {
     body[space] .tv {
         --scale: 0.9;
         transition: box-shadow .6s ease-out, height var(--spaceIntro) ease;
-        will-change: height, transform
+        will-change: height, transform;
     }
 }
 
 body[space=exiting] .tv,
 body[space=floating] .tv {
-    box-shadow: 0 0 50px 1px hsla(0, 0%, 100%, .2)
+    box-shadow: 0 0 50px 1px hsla(0, 0%, 100%, .2);
 }
 
 body[space=entering] .tv,
 body[space=floating] .tv {
-    animation-name: go-to-space
+    animation-name: go-to-space;
 }
 
 @media (max-width:900px) {
 
     body[space=entering] .tv,
     body[space=floating] .tv {
-        height: 56.25vw
+        height: 56.25vw;
     }
 }
 
 body[space=exiting] .tv {
     transform: var(--endTransform);
     animation-name: exit-space;
-    animation-delay: var(--spaceOutroDelay)
+    animation-delay: var(--spaceOutroDelay);
 }
 
 @media (max-width:900px) {
     body[space=exiting] .tv {
-        transition-delay: var(--spaceOutroDelay)
+        transition-delay: var(--spaceOutroDelay);
     }
 }
 
 body.loading-channel .tv-screen {
-    filter: brightness(3) saturate(.15) contrast(1.2)
+    filter: brightness(3) saturate(.15) contrast(1.2);
 }
 
 body.loading-channel .tv-effect.--static {
-    opacity: .4
+    opacity: .4;
 }
 
 body.loading-channel .tv-effect.--artifacts {
-    opacity: .7
+    opacity: .7;
 }
 
 body.loading-page .tv-screen {
-    filter: brightness(3) grayscale(1) contrast(1.2)
+    filter: brightness(3) grayscale(1) contrast(1.2);
 }
 
 body.loading-page .tv-effect.--decontrast {
     display: block;
-    opacity: .2
+    opacity: .2;
 }
 
 body.loading-page .tv-effect.--static {
-    opacity: .3
+    opacity: .3;
 }
 
 body.loading-page .tv-effect.--artifacts {
-    opacity: .8
+    opacity: .8;
 }
 
 body.loading-page .tv-effect.--crt:before {
-    animation-duration: .25s
+    animation-duration: .25s;
 }
 
 body.loading-page .tv-content {
     filter: blur(5px);
-    pointer-events: none
+    pointer-events: none;
 }
 
 :root {
@@ -723,29 +723,29 @@ body.loading-page .tv-content {
     --glitchy-red: rgba(183, 2, 2, 0.4);
     --container-width: 80%;
     --gui-side: calc(50% - var(--container-width)/2);
-    --gui-bottom: 2.94117647059rem
+    --gui-bottom: 2.94117647059rem;
 }
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: #28272a transparent
+    scrollbar-color: #28272a transparent;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar {
-    width: 3px
+    width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #28272a
+    background-color: #28272a;
 }
 
 ::selection {
     background-color: #fff;
-    color: #000
+    color: #000;
 }
 
 html {
@@ -758,12 +758,12 @@ html {
     font-size: clamp(16px, 1.8vw, 34px);
     font-size: var(--font-size-primary);
     line-height: 1.4;
-    line-height: var(--line-height)
+    line-height: var(--line-height);
 }
 
 body {
     background-color: #000;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .space,
@@ -773,7 +773,7 @@ body {
 .tv-screen,
 body,
 html {
-    height: 100%
+    height: 100%;
 }
 
 .page-container {
@@ -783,31 +783,31 @@ html {
     min-height: 100vh;
     width: 80%;
     width: var(--container-width);
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 body.hide-content .page-container {
-    visibility: hidden
+    visibility: hidden;
 }
 
 .glitchy-text {
     --shadow-x-distance: 2px;
     --shadow-y-distance: 1px;
     text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 rgba(2, 183, 182, .4), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 rgba(183, 2, 2, .4);
-    text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 var(--glitchy-blue), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 var(--glitchy-red)
+    text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 var(--glitchy-blue), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 var(--glitchy-red);
 }
 
 @media (min-width:481px) {
     .glitchy-text {
         --shadow-x-distance: 3px;
-        --shadow-y-distance: 2px
+        --shadow-y-distance: 2px;
     }
 }
 
 @media (min-width:960px) {
     .glitchy-text {
         --shadow-x-distance: 4px;
-        --shadow-y-distance: 3px
+        --shadow-y-distance: 3px;
     }
 }
 
