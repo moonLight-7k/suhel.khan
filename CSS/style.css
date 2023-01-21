@@ -18,7 +18,7 @@ a:hover {
 }
 
 body {
-    font-family: 'VCR OSD Mono','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'VCR OSD Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: url("../assets/image/cursor1.png"), auto;
     background-image: url('../assets/image/bg.webp');
     background-repeat: no-repeat;
@@ -305,7 +305,7 @@ html:not(.webp) a {
 }
 
 html {
-    font-family: VCR OSD Mono, monospace;
+    font-family: 'VCR OSD Mono', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: var(--font-primary);
     font-weight: 400;
     font-style: normal;
