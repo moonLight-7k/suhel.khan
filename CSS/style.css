@@ -22,7 +22,7 @@ body {
 
 a:hover {
     cursor: url("../assets/image/linkCursor.svg"), auto;
-    background-color: rgb(115, 228, 115);
+    background-color: rgb(8, 164, 8);
     transition: 150ms;
     padding: 1px;
 
@@ -269,7 +269,7 @@ html {
     width: var(--container-width);
     margin: 0 auto
 }
-
+a,
 .glitchy-text {
     --shadow-x-distance: 2px;
     --shadow-y-distance: 2px;
