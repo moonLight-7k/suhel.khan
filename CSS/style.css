@@ -1,5 +1,4 @@
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
-@import url(//db.onlinewebfonts.com/c/2545d122b16126676225a5b52283ae23?family=VCR+OSD+Mono);
 
 *,
 :after,
@@ -9,11 +8,8 @@
 }
 
 
-
-
-
 body {
-    font-family: 'VCR OSD Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'VCR OSD Mono', 'Segoe UI', Tahoma, Geneva, Verdana, monospace;
     cursor: url("../assets/image/cursor1.png"), auto;
     background-image: url('../assets/image/bg.webp');
     background-repeat: no-repeat;
