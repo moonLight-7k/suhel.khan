@@ -27,7 +27,7 @@ a:hover {
     cursor: url("../assets/image/linkCursor.svg"), auto;
     background-color: rgb(115, 228, 115);
     transition: 150ms;
-    padding: 2px;
+    padding: 1px;
 
 }
 
@@ -36,7 +36,7 @@ a:hover {
     background-image: url('../assets/image/rainbow.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2px;
+    padding: 1px;
 }
 
 body,
