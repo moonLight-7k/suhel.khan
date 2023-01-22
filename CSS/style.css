@@ -211,15 +211,15 @@ html:not(.webp) a {
     --layer-content: 13;
     --layer-tv-effects: 8;
     --layer-channels: 5;
-    --glitchy-blue: rgba(2, 183, 182, 0.4);
-    --glitchy-red: rgba(183, 2, 2, 0.4);
+    --glitchy-blue: rgba(6, 171, 171, 0.658);
+    --glitchy-red: rgba(183, 2, 2, 0.596);
     --container-width: 80%;
     --gui-side: calc(50% - var(--container-width)/2);
     --gui-bottom: 2.94117647059rem
 }
 
 * {
-    scrollbar-color: #e8e7e9;
+    scrollbar-color: #1d1d1e;
 }
 
 ::-webkit-scrollbar-track {
@@ -227,11 +227,11 @@ html:not(.webp) a {
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #525154;
+    background-color: #080808;
 }
 
 html {
