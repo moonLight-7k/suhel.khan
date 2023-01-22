@@ -53,12 +53,12 @@ ul {
 }
 
 button {
-    margin: 0
+    margin: 0;
 }
 
 body {
     scroll-behavior: smooth;
-    text-rendering: optimizeSpeed
+    text-rendering: optimizeSpeed;
 }
 
 a:not([class]) {
@@ -68,50 +68,7 @@ a:not([class]) {
 
 
 
-@keyframes turn-on-transform {
-    0% {
-        transform: scaleY(.6) translate(0) skew(2deg)
-    }
 
-    6% {
-        transform: scale(2) translateY(-20%) skew(2deg)
-    }
-
-    30% {
-        transform: scale(1) translateY(-20%) skew(-2deg)
-    }
-
-    50% {
-        transform: scaleY(.8) translateY(40%) skew(-2deg)
-    }
-
-    to {
-        transform: scale(1) translate(0) skew(0)
-    }
-}
-
-@keyframes turn-on-filter {
-    0% {
-        filter: brightness(1) invert(1) saturate(1.2)
-    }
-
-    3% {
-        filter: brightness(4) invert(1) saturate(2)
-    }
-
-    15% {
-        filter: brightness(4) invert(0) saturate(2)
-    }
-
-    30%,
-    50% {
-        filter: brightness(10) invert(0) saturate(1)
-    }
-
-    70% {
-        filter: contrast(1) brightness(1) invert(0) saturate(1)
-    }
-}
 
 .header {
     position: relative;
@@ -206,25 +163,9 @@ html:not(.webp) a {
     background-image: url(/assets/images/rainbow-static.gif)
 }
 
-.bio__photo {
-    position: relative;
-    color: #fff;
-    color: var(--text-secondary)
-}
 
-.bio__photo:after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 34;
-    z-index: var(--layer-me-hover);
-    top: calc(100% + 1em);
-    left: 1rem;
-    width: 14rem;
-    padding-bottom: 14rem;
-    visibility: hidden;
-    background-size: cover
-}
+
+
 
 .tv {
     position: relative;
@@ -247,7 +188,15 @@ html:not(.webp) a {
     height: 100%
 }
 
-
+.tv-content {
+    position: relative;
+    z-index: 13;
+    z-index: var(--layer-content);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow: hidden auto;
+    background-color: rgba(0, 0, 0, .4)
+}
 
 
 
