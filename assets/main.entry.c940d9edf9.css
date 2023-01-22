@@ -1,9 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
 
-body{
+body {
     font-family: 'VCR OSD Mono', sans-serif;
 
 }
+
 *,
 :after,
 :before {
@@ -83,7 +84,7 @@ img {
 }
 
 @font-face {
-    font-family: 'VCR OSD Mono',serif;
+    font-family: 'VCR OSD Mono', serif;
     src: url(../assets/fonts/VCROSDMono.woff2) format("woff2"), url(../assets/fonts/) format("woff");
     font-weight: 400;
     font-style: normal;

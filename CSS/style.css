@@ -8,15 +8,9 @@
 
 }
 
-a:hover {
-    cursor: url("../assets/image/linkCursor.svg"), auto;
-    background-image: url('../assets/image/link.webp');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 
 
-}
+
 
 body {
     font-family: 'VCR OSD Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,6 +21,22 @@ body {
     background-size: cover;
     opacity: 0.7;
 
+}
+
+a:hover {
+    cursor: url("../assets/image/linkCursor.svg"), auto;
+    background-color: rgb(115, 228, 115);
+    transition: 150ms;
+    padding: 2px;
+
+}
+
+
+.aa:hover {
+    background-image: url('../assets/image/rainbow.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2px;
 }
 
 body,
@@ -289,8 +299,8 @@ html:not(.webp) a {
 }
 
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #28272a transparent
+    /* scrollbar-width: thin; */
+    scrollbar-color: #e8e7e9;
 }
 
 ::-webkit-scrollbar-track {
@@ -298,11 +308,11 @@ html:not(.webp) a {
 }
 
 ::-webkit-scrollbar {
-    width: 3px
+    width: 5px
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #28272a
+    background-color: #525154
 }
 
 html {
@@ -319,7 +329,7 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: rgb(52, 51, 51);
     overflow: hidden
 }
 
