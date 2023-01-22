@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.9;
 
 }
 
@@ -202,7 +202,7 @@ html:not(.webp) a {
 
 
 :root {
-    --text-primary: #a1a0a0;
+    --text-primary: #bcb9b9;
     --text-secondary: #fff;
     --font-primary: "VCR OSD Mono", monospace;
     --font-size-primary: clamp(16px, 1.8vw, 34px);
@@ -242,7 +242,7 @@ html {
     font-family: var(--font-primary);
     font-weight: 500;
     font-style: normal;
-    color: #a0a0a0;
+    color: #fff;
     color: var(--text-primary);
     font-size: clamp(16px, 1.8vw, 34px);
     font-size: var(--font-size-primary);
