@@ -271,16 +271,16 @@ html {
 }
 
 .glitchy-text {
-    --shadow-x-distance: 5px;
-    --shadow-y-distance: 4px;
-    text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 rgb(3, 202, 202), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 rgba(183, 2, 2, 0.97);
+    --shadow-x-distance: 1px;
+    --shadow-y-distance: 3px;
+    text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 rgba(2, 183, 182, 0.4), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 rgba(183, 2, 2, 0.4);
     text-shadow: var(--shadow-x-distance) var(--shadow-y-distance) 0 var(--glitchy-blue), calc(var(--shadow-x-distance)*-1) calc(var(--shadow-y-distance)*-1) 0 var(--glitchy-red);
 }
 
 @media (min-width:481px) {
     .glitchy-text {
-        --shadow-x-distance: 3px;
-        --shadow-y-distance: 2px
+        --shadow-x-distance: 1px;
+        --shadow-y-distance: 1px
     }
 }
 
