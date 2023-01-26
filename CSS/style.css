@@ -70,8 +70,8 @@ a:not([class]) {
 .header {
     position: relative;
     min-height: 300px;
-    height: 50vh;
-    margin-bottom: 2.07rem;
+    /* height: 30vh; */
+    /* margin-bottom: -100px; */
     text-transform: uppercase
 }
 
@@ -106,7 +106,7 @@ a:not([class]) {
 .nav__breadcrumb li:last-child:after {
     margin-left: .5ch;
     content: "►";
-    font-size: 1.2em
+    font-size: 1em
 }
 
 @media (max-width:480px) {
@@ -115,12 +115,12 @@ a:not([class]) {
     }
 
     .nav__menu li {
-        margin-top: .6rem
+        margin-top: .1rem
     }
 }
 
 .big-text {
-    font-size: clamp(24px, 4.6vw, 63px);
+    font-size: clamp(14px, 4vw, 23px);
     font-size: var(--font-size-secondary);
     text-transform: uppercase
 }
@@ -202,8 +202,8 @@ html:not(.webp) a {
     --text-primary: #bcb9b9;
     --text-secondary: #fff;
     --font-primary: "VCR OSD Mono", monospace;
-    --font-size-primary: clamp(16px, 1.8vw, 34px);
-    --font-size-secondary: clamp(24px, 4.6vw, 63px);
+    --font-size-primary: clamp(10px, 2vw, 24px);
+    --font-size-secondary: clamp(35px, 5vw, 53px);
     --line-height: 1.4;
     --layer-top: 55;
     --layer-me-hover: 34;
@@ -267,7 +267,7 @@ html {
     min-height: 100vh;
     width: 80%;
     width: var(--container-width);
-    margin: 0 auto
+    margin: 2px auto;
 }
 a,
 .glitchy-text {
