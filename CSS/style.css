@@ -202,7 +202,7 @@ html:not(.webp) a {
     --text-primary: #bcb9b9;
     --text-secondary: #fff;
     --font-primary: "VCR OSD Mono", monospace;
-    --font-size-primary: clamp(10px, 2vw, 24px);
+    --font-size-primary: clamp(12px, 2vw, 24px);
     --font-size-secondary: clamp(35px, 5vw, 53px);
     --line-height: 1.4;
     --layer-top: 55;
