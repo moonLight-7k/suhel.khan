@@ -3,7 +3,8 @@
 This is the repository for my personal website. The website is built using HTML, CSS, and JavaScript and is hosted on GitHub Pages.
 
 ## Features
-- About me page with information about my background and skills.
+- About ME
+- My Social Media 
 - My CV
 
 
