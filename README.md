@@ -1,3 +1,5 @@
+![Website](https://img.shields.io/website?down_color=Red&down_message=Offline&label=Status&style=plastic&up_color=Green&up_message=Online&url=https%3A%2F%2Fsuhelkhan.netlify.app%2F)
+
 # Personal Website
 
 This is the repository for my personal website. The website is built using HTML, CSS, and JavaScript and is hosted on GitHub Pages.
@@ -24,4 +26,3 @@ This website is licensed under the [MIT License](https://opensource.org/licenses
 Feel free to contact me if you have any questions or feedback about the website. You can reach me at [suhel.khan@mail.com](mailto:suhel.khan@mail.com) or through the contact form on the website.
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/09365ae8-b868-4e65-b577-6672180602c2/deploy-status)](https://app.netlify.com/sites/suhelkhan/deploys)
