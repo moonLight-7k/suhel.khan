@@ -12,7 +12,7 @@ script.onload = function () {
     // Fade out the spinner after 5 seconds
     setTimeout(function () {
         spinnerWrapper.fadeOut(preloaderFadeOutTime);
-    }, 5000);
+    }, 3000);
 };
 
 $(window).on('load', function () {
@@ -23,5 +23,5 @@ $(window).on('load', function () {
     // Fade out the spinner after 5 seconds
     setTimeout(function () {
         spinnerWrapper.fadeOut(preloaderFadeOutTime);
-    }, 5000);
+    }, 3000);
 });
