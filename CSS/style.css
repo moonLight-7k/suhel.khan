@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Righteous&display=swap');
+@import 'compass/css3';
 
 *,
 :after,
@@ -10,8 +11,8 @@
 
 
 body {
-    font-family: 'VCR OSD Mono','IBM Plex Mono', 'Segoe UI', Tahoma, Geneva, Verdana;
-    cursor: url("../assets/image/cursor1.png"), auto;
+    font-family: 'VCR OSD Mono', 'IBM Plex Mono', 'Segoe UI', Tahoma, Geneva, Verdana;
+    /* cursor: url("../assets/image/cursor1.png"), auto; */
     background-image: url('../assets/image/bg.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,10 +22,13 @@ body {
 }
 
 a:hover {
-    cursor: url("../assets/image/linkCursor.svg"), auto;
-    background-color: rgb(8, 164, 8);
+    /* cursor: url("../assets/image/linkCursor.svg"), auto; */
+    background-image: url('../assets/image/rainbow.webp');
+
+    /* background-color: rgb(0, 0, 0); */
+    color: #949292;
     transition: 150ms;
-    padding: 1px;
+    @include animation(filterHue2 2s linear infinite);
 
 }
 
@@ -33,7 +37,7 @@ a:hover {
     background-image: url('../assets/image/rainbow.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 1px;
+    /* padding: 1px; */
 }
 
 body,
@@ -235,7 +239,7 @@ html:not(.webp) a {
 }
 
 html {
-    font-family: 'VCR OSD Mono','IBM Plex Mono', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'VCR OSD Mono', 'IBM Plex Mono', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: var(--font-primary);
     font-weight: 500;
     font-style: normal;
@@ -269,6 +273,7 @@ html {
     width: var(--container-width);
     margin: 2px auto;
 }
+
 a,
 .glitchy-text {
     --shadow-x-distance: 2px;
@@ -289,4 +294,108 @@ a,
         --shadow-x-distance: 4px;
         --shadow-y-distance: 3px
     }
+}
+
+
+
+
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 350px auto;
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #f6f6f6;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+
+}
+
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #151414;
+    z-index: 999999;
 }
