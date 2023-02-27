@@ -1,4 +1,4 @@
-![Website](https://img.shields.io/website?down_color=Red&down_message=Offline&label=Status&style=plastic&up_color=Green&up_message=Online&url=https%3A%2F%2Fsuhelkhan.netlify.app%2F)
+# ![Website](https://img.shields.io/website?down_color=Red&down_message=Offline&label=Status&style=plastic&up_color=Green&up_message=Online&url=https%3A%2F%2Fsuhelkhan.netlify.app%2F)
 
 # Personal Website
 
