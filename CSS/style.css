@@ -12,7 +12,7 @@
 
 body {
     font-family: 'VCR OSD Mono', 'IBM Plex Mono', 'Segoe UI', Tahoma, Geneva, Verdana;
-    /* cursor: url("../assets/image/cursor1.png"), auto; */
+    cursor: url("../assets/image/cursor1.png"), auto;
     background-image: url('../assets/image/bg.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,9 +22,8 @@ body {
 }
 
 a:hover {
-    /* cursor: url("../assets/image/linkCursor.svg"), auto; */
+    cursor: url("../assets/image/linkCursor.svg"), auto;
     background-image: url('../assets/image/rainbow.webp');
-
     /* background-color: rgb(0, 0, 0); */
     color: #949292;
     transition: 150ms;
@@ -297,7 +296,7 @@ a,
 }
 
 
-
+/* ===========================( CSS for loader)========================= */
 
 .sk-cube-grid {
     width: 40px;

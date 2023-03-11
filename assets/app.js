@@ -1,5 +1,7 @@
 document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" }).format(new Date);
 
+// ================(script for loader)============================
+
 var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
 script.type = 'text/javascript';
