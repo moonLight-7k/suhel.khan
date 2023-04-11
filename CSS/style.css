@@ -164,20 +164,6 @@ html:not(.webp) a {
 }
 
 
-
-
-
-.tv {
-    position: relative;
-    background-color: #000;
-    overflow: hidden;
-    margin: 0 auto
-}
-
-.tv-screen {
-    animation: turn-on-transform .4s, turn-on-filter 1s
-}
-
 .tv-effect {
     position: absolute;
     z-index: 8;
